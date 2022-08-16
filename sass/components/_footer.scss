@@ -1,0 +1,139 @@
+/*Footer*/
+.page-footer {
+	margin: 0px;
+	background-color: $bcg-color-two;
+	padding-top: 94px;
+	padding-bottom: 60px;
+}
+.page-footer .container {
+	display: flex;
+	gap: 70px;
+}
+.logo--second {
+	font-family: $font-second;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: $bcg-color-one;
+}
+.logo__link--inverse {
+	margin-bottom: 20px;
+}
+.address__item .address__link--physical {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $bcg-color-one;
+}
+.address__link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $address-link-color;
+	transition: color $duration $timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+.social-media__list {
+	display: flex;
+	gap: 10px;
+}
+.form__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: $bcg-color-one;
+	margin-bottom: 20px;
+}
+.input--mail {
+	width: 358px;
+	height: 50px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.6);
+	background-color: $bcg-color-two;
+	padding-left: 16px;
+}
+.btn-in {
+	align-items: center;
+	color: $bcg-color-one;
+	display: flex;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	line-height: 1.88;
+	margin: 9px 28px;
+	text-align: center;
+}
+.btn-in svg {
+	flex-shrink: 0;
+	margin-left: 10px;
+}
+.subs-btn {
+	background-color: $accent-color;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	height: 50px;
+	transition: background-color $duration $timing-function,
+		box-shadow $duration $timing-function;
+	width: 200px;
+
+	&:hover,
+	&:focus {
+		background-color: $btn-secondary-accent-color;
+	}
+}
+.form--mail {
+	display: flex;
+	gap: 12px;
+}
+.logo-two {
+	margin-bottom: auto;
+}
+.social-media__title--join {
+	color: $bcg-color-one;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	line-height: 1.14;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+footer {
+	display: flex;
+}
+.social-media__link--second {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	background-color: $social-media-link-bcg-color;
+	transition: background-color $duration $timing-function;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: $bcg-color-one;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
+}
