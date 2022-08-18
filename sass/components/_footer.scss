@@ -11,30 +11,18 @@
 }
 .logo--second {
 	font-family: $font-second;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
+	@include font(700, 26px, 1.19, 0.03em);
 	color: $bcg-color-one;
 }
 .logo__link--inverse {
 	margin-bottom: 20px;
 }
 .address__item .address__link--physical {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@include font(400, 14px, 1.71, 0.03em);
 	color: $bcg-color-one;
 }
 .address__link {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@include font(400, 14px, 1.71, 0.03em);
 	color: $address-link-color;
 	transition: color $duration $timing-function;
 
@@ -51,12 +39,8 @@
 	gap: 10px;
 }
 .form__title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
-
 	color: $bcg-color-one;
 	margin-bottom: 20px;
 }
@@ -65,7 +49,7 @@
 	height: 50px;
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 0.6);
 	background-color: $bcg-color-two;
@@ -75,10 +59,7 @@
 	align-items: center;
 	color: $bcg-color-one;
 	display: flex;
-	font-size: 16px;
-	font-weight: 700;
-	letter-spacing: 0.06em;
-	line-height: 1.88;
+	@include font(700, 16px, 1.88, 0.06em);
 	margin: 9px 28px;
 	text-align: center;
 }
@@ -109,11 +90,7 @@
 }
 .social-media__title--join {
 	color: $bcg-color-one;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 700;
-	letter-spacing: 0.03em;
-	line-height: 1.14;
+	@include font(700, 14px, 1.14, 0.03em);
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
@@ -121,17 +98,9 @@ footer {
 	display: flex;
 }
 .social-media__link--second {
-	display: inline-block;
-	width: 44px;
-	height: 44px;
 	background-color: $social-media-link-bcg-color;
 	transition: background-color $duration $timing-function;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	fill: $bcg-color-one;
-
 	&:hover,
 	&:focus {
 		background-color: $accent-color;

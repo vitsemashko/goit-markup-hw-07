@@ -7,11 +7,7 @@
 	padding-bottom: 94px;
 }
 .activities__title {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
-	letter-spacing: 0.03em;
+	@include font(700, 36px, 1.17, 0.03em);
 	color: $primary-color;
 
 	margin-bottom: 50px;
@@ -26,10 +22,7 @@
 }
 .activities__text {
 	font-family: $font-main;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 
 	color: $bcg-color-one;

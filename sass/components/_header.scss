@@ -12,20 +12,12 @@ header {
 }
 .logo--one {
 	font-family: $font-second;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
+	@include font(700, 26px, 1.19, 0.03em);
 	color: $accent-color;
 }
 .logo--two {
 	font-family: $font-second;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
+	@include font(700, 26px, 1.19, 0.03em);
 	color: $logo-black;
 	display: inline-block;
 	margin-bottom: auto;
@@ -44,11 +36,7 @@ header {
 	margin-left: auto;
 }
 .site-nav__list a {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(500, 14px, 1.14, 0.02em);
 	color: $primary-color;
 	padding: 32px 0;
 	transition: color $duration $timing-function;
@@ -87,12 +75,7 @@ header {
 	padding: 32px 0;
 	margin-left: auto;
 	margin-right: auto;
-
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-
+	@include font(500, 14px, 1.14, 0.02em);
 	color: $secondary-color;
 	transition: color $duration $timing-function;
 	&:hover,

@@ -68,3 +68,12 @@ img {
 	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
+.social-media__link {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -14,25 +14,17 @@
 	background-size: cover;
 }
 .studio-hero__title {
-	font-style: normal;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
+	@include font(900, 44px, 1.36, 0.06em);
 	text-align: center;
-	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: $bcg-color-one;
-
 	width: 696px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
 .button--blue {
 	font-family: inherit;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.875;
+	@include font(700, 16px, 1.875, 0.06em);
 	color: $bcg-color-one;
 	background-color: $accent-color;
 	transition: background-color $duration $timing-function,

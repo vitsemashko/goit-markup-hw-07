@@ -11,20 +11,14 @@
 	width: 270px;
 }
 .features__text {
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@include font(400, 14px, 1.71, 0.03em);
 	color: $secondary-color;
 	text-align: left;
 
 	padding: 0;
 }
 .features__title--second {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 	color: $primary-color;
 	margin-bottom: 10px;

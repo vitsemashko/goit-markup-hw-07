@@ -3,13 +3,8 @@
 	margin: 0;
 	margin-bottom: 50px;
 
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	@include font(700, 36px, 1.17, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
-
 	color: $primary-color;
 }
 .customers__list {
