@@ -7,6 +7,8 @@
 .team__list {
 	display: flex;
 	justify-content: space-between;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 .team__title {
 	@include font(700, 36px, 1.17, 0.03em);
